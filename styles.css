@@ -1,4 +1,14 @@
 /* Cargolonie styles scss */
+<<<<<<< HEAD
+=======
+
+/*
+* #111c32 bleu foncé
+*
+*
+*/
+
+>>>>>>> 20f1bdc (first design - still in wip)
 @font-face {
   font-family: "Vinson";
   src: url(fonts/VInson-Regular.ttf) format("truetype");
@@ -24,7 +34,10 @@
 }
 
 body {
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 
 #webwrapper {
@@ -36,6 +49,10 @@ body {
 /**********/
 /* LOADER */
 /**********/
+<<<<<<< HEAD
+=======
+/*
+>>>>>>> 20f1bdc (first design - still in wip)
 #loader-wrapper {
   overflow: hidden;
   position: absolute;
@@ -46,8 +63,14 @@ body {
   background-color: #fff;
   z-index: 10;
 }
+<<<<<<< HEAD
 
 /* Spinning wheel keyframes */
+=======
+*/
+/* Spinning wheel keyframes */
+/*
+>>>>>>> 20f1bdc (first design - still in wip)
 #wheelimg {
   position: absolute;
   left: 62%;
@@ -110,6 +133,10 @@ body {
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+=======
+/*
+>>>>>>> 20f1bdc (first design - still in wip)
 /* All sections */
 .section {
   overflow: hidden;
@@ -120,17 +147,28 @@ body {
 /**********/
 header {
   transform-origin: top;
+<<<<<<< HEAD
   height: 100vh;
   padding: 5vh 10% 5% 10%;
+=======
+  height: 50vh;
+  padding: 5vh 10% 4% 10%;
+  font-family: 'Vinson';
+>>>>>>> 20f1bdc (first design - still in wip)
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+<<<<<<< HEAD
   box-shadow: 0 0 9px 12px #fff;
+=======
+/*  box-shadow: 0 0 9px 12px #fff;*/
+>>>>>>> 20f1bdc (first design - still in wip)
   z-index: 2;
 }
 header h1 {
   display: flex;
+<<<<<<< HEAD
   letter-spacing: 25px;
   opacity: 0;
   font-family: "Vinson";
@@ -159,6 +197,51 @@ header p {
   top: 10vh;
 }
 
+=======
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 7em;
+  transform: translateY(-5em);
+  margin-top: 15%;
+  opacity: 0;
+}
+header h1 span {
+}
+
+#header-logo {
+  position: absolute;
+  left: 28em;
+  top: 17em;
+  width: 86em;
+}
+
+#title-la {
+  opacity: 0;
+  position: absolute;
+  top: -1em;
+  left: 1em;
+}
+/**************/
+/* SUB HEADER */
+/**************/
+#sub-header {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center; align-items: center;
+}
+#sub-header h3 {
+  font-size: calc(10px + 1vw);
+  opacity: 0;
+
+  font-family: 'Vinson';
+  font-weight: 200;
+  margin-top: 10%;
+}
+
+
+>>>>>>> 20f1bdc (first design - still in wip)
 /*****************/
 /* KEYFRAAAAAMES */
 /*****************/
@@ -179,7 +262,11 @@ header p {
 */
 /* Display p after loading */
 .show-header-p {
+<<<<<<< HEAD
   animation: anim-reveal-header 1.9s ease-out 1.7s forwards;
+=======
+  animation: anim-reveal-header 1.9s ease-out 3s forwards;
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 
 @keyframes anim-reveal-header {
@@ -191,8 +278,14 @@ header p {
   }
 }
 /* Shrink HEADER (93%) */
+<<<<<<< HEAD
 .shrink-header {
   animation: anim-shrink-header 1.2s ease-out 2s forwards;
+=======
+/*
+.shrink-header {
+  animation: anim-shrink-header 1.7s ease-out 2s forwards;
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 
 @keyframes anim-shrink-header {
@@ -200,12 +293,21 @@ header p {
     height: 100vh;
   }
   to {
+<<<<<<< HEAD
     height: 94vh;
   }
 }
 /* Keyframe for TITLE */
 .show-title-la {
   animation: anim-show-title-la 1.8s linear forwards;
+=======
+    height: 98vh;
+  }
+}*/
+/* Keyframe for TITLE */
+.show-title-la {
+  animation: anim-show-title-la 2s linear 2.4s forwards;
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 
 @keyframes anim-show-title-la {
@@ -216,17 +318,53 @@ header p {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
 .lettre {
   animation: anim-title-slide 2.5s cubic-bezier(0, 0, 0.53, 1) forwards;
 }
 
+=======
+
+.show-title {
+  animation: anim-show-title 5s linear forwards;
+}
+
+@keyframes anim-show-title {
+  0% {
+    animation-timing-function: cubic-bezier(.35,0,.35,1);
+    opacity: 0;
+    transform: translateY(-5em);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+.lettre {
+  animation: anim-title-slide 1.5s cubic-bezier(.39,.9,.37,.89) forwards;
+}
+*/
+/*
+>>>>>>> 20f1bdc (first design - still in wip)
 @-moz-keyframes anim-title-slide {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+<<<<<<< HEAD
     -moz-transform: translateX(-800px);
+=======
+    -moz-transform: translateY(4em);
+>>>>>>> 20f1bdc (first design - still in wip)
   }
 }
 @-webkit-keyframes anim-title-slide {
@@ -235,7 +373,11 @@ header p {
   }
   to {
     opacity: 1;
+<<<<<<< HEAD
     -webkit-transform: translateX(-800px);
+=======
+    -webkit-transform: translateY(4em);
+>>>>>>> 20f1bdc (first design - still in wip)
   }
 }
 @keyframes anim-title-slide {
@@ -244,6 +386,7 @@ header p {
   }
   to {
     opacity: 1;
+<<<<<<< HEAD
     transform: translateX(-800px);
   }
 }
@@ -286,6 +429,46 @@ header p {
 .lettre:nth-child(10) {
   animation-delay: 6.3s;
 }
+=======
+    transform: translateY(4em);
+  }
+}
+*/
+/*
+.lettre:nth-child(4) {
+  animation-delay: .4s;
+}
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.lettre:nth-child(1) {
+  animation-delay: 2s;
+}
+.lettre:nth-child(6) {
+  animation-delay: 2.4s;
+}
+.lettre:nth-child(10) {
+  animation-delay: 2.8s;
+}
+.lettre:nth-child(2) {
+  animation-delay: 3.2s;
+}
+.lettre:nth-child(7) {
+  animation-delay: 3.6s;
+}
+.lettre:nth-child(3) {
+  animation-delay: 4s;
+}
+
+*/
+
+>>>>>>> 20f1bdc (first design - still in wip)
 
 /**********************/
 /* MAIN PHOTO SECTION */
@@ -293,7 +476,11 @@ header p {
 #main-photo1 {
   height: 120vh;
   width: 100vw;
+<<<<<<< HEAD
   background-image: url(img/photo_rand.jpg);
+=======
+  background-image: url(img/background_cargosmall.jpg);
+>>>>>>> 20f1bdc (first design - still in wip)
   background-attachment: fixed;
   background-size: cover;
 }
@@ -313,6 +500,7 @@ header p {
 /**********************/
 #whatwedo {
   width: 100vw;
+<<<<<<< HEAD
   background-color: #0f0f0f;
   color: #ffffff;
   padding: 150px 165px 150px 150px;
@@ -322,16 +510,32 @@ header p {
 #whatwedo .whatwedo-article {
   width: 610px;
   height: 310px;
+=======
+  min-height: 150vh;
+  background-color: #04382b;
+  color: #ffffff;
+  padding: 150px 365px 150px 350px;
+  box-shadow: 0 0 9px 12px #04382b;
+  z-index: 2;
+}
+#whatwedo .whatwedo-article {
+  width: 750px;
+  height: 450px;
+>>>>>>> 20f1bdc (first design - still in wip)
   opacity: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   border: 5px solid #717171;
   border-radius: 10px;
+=======
+>>>>>>> 20f1bdc (first design - still in wip)
   transform: translateX(-600px);
 }
 #whatwedo .whatwedo-article img {
   display: block;
+<<<<<<< HEAD
   width: 300px;
   height: 300px;
   border: 2px solid red;
@@ -348,6 +552,25 @@ header p {
 }
 #whatwedo .whatwedo-article .whatwedo-text-div h2 {
   margin-bottom: 15px;
+=======
+  width: 400px;
+  height: 440px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #051813;
+  object-fit: cover;
+}
+#whatwedo .whatwedo-article .whatwedo-text-div {
+  width: 350px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px;
+  background-color: #00000070;
+}
+#whatwedo .whatwedo-article .whatwedo-text-div h2 {
+  margin-bottom: 2em;
+>>>>>>> 20f1bdc (first design - still in wip)
   text-decoration: underline;
 }
 #whatwedo .whatwedo-article:nth-child(even) {
@@ -355,7 +578,22 @@ header p {
   margin-left: auto;
   transform: translateX(600px);
 }
+<<<<<<< HEAD
 
+=======
+#whatwedo .whatwedo-article:nth-child(even) img {
+  border-right: none;
+  border-radius: 0 5px 5px 0;
+}
+/* img test with div */
+.article-img {
+  width: 400px;
+  height: 440px;
+  border-radius: 5px 0 0 5px;
+  background-image: url(img/cargos/cargorange.jpg);
+}
+/* Show Articles Animations */
+>>>>>>> 20f1bdc (first design - still in wip)
 .show-odd-article {
   animation: anim-show-odd-article 1.6s ease-out forwards;
 }
@@ -363,7 +601,11 @@ header p {
 @keyframes anim-show-odd-article {
   from {
     opacity: 0;
+<<<<<<< HEAD
     transform: translateX(-600px);
+=======
+    transform: translateX(-800px);
+>>>>>>> 20f1bdc (first design - still in wip)
   }
   to {
     opacity: 1;
@@ -377,19 +619,129 @@ header p {
 @keyframes anim-show-even-article {
   from {
     opacity: 0;
+<<<<<<< HEAD
     transform: translateX(600px);
+=======
+    transform: translateX(800px);
+>>>>>>> 20f1bdc (first design - still in wip)
   }
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Hide Articles Animations */
+.hide-odd-article {
+  animation: anim-hide-odd-article 1.6s ease-out forwards;
+}
+
+@keyframes anim-hide-odd-article {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+}
+.hide-even-article {
+  animation: anim-hide-even-article 1.6s ease-out forwards;
+}
+
+@keyframes anim-hide-even-article {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+}
+/***********/
+/* LA TEAM */
+/***********/
+#lateam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 20vw 12em 20vw;
+  background-color: #04382b;
+  color: #fff;
+}
+#lateam h2 {
+  font-family: 'Vinson';
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+#lateam-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#lateam article {
+  width: fit-content; max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0000005e;
+  padding: 5px;
+  margin: 2em;
+  border-radius: 10%;
+}
+.id-photo {
+  width: 240px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10% 10% 0 0;
+}
+.id-photo1 {
+  background-image: url(img/team/ewen.jpeg);
+}
+.id-photo2 {
+  background-image: url(img/team/adele.jpeg);
+}
+.id-photo3 {
+  background-image: url(img/team/jb.jpeg);
+}
+.id-photo4 {
+  background-image: url(img/team/ganael.jpg);
+}
+.id-photo5 {
+  background-image: url(img/team/tristan.jpg);
+}
+.id-photo6 {
+  background-image: url(img/team/nikos.jpg);
+}
+.id-photo7 {
+  background-image: url(img/team/yannick.jpeg);
+}
+.id-photo8 {
+  background-image: url(img/team/philippe.jpeg);
+}
+.lateam-desc {
+  width: 240px;
+  height: 90px;
+  text-align: center;
+  display: flex; align-items: center;
+  font-family: "Vinson";
+  font-weight: 200;
+  padding-top: 5px;
+}
+
+>>>>>>> 20f1bdc (first design - still in wip)
 /***********************/
 /* PRE FOOTER / E-MAIL */
 /***********************/
 #pre-footer {
   width: 100%;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   padding: 70px 0;
@@ -405,6 +757,25 @@ header p {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
+=======
+  justify-content: center;
+  font-family: "Vinson";
+  padding: 6em 0;
+  background: linear-gradient(#04382b, #000000);
+}
+#contact-desc {
+  height: 700px;
+  padding: 0 5em;
+  color: #faebd7;
+}
+#pre-footer h3 {
+  font-weight: 800;
+  font-size: 1.7em;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+#pre-footer form {
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 #pre-footer form .femail-group {
   margin: 10px;
@@ -416,12 +787,18 @@ header p {
   border-radius: 10px;
   font-size: 1.1em;
   font-weight: 200;
+<<<<<<< HEAD
   font-family: "Vinson";
+=======
+>>>>>>> 20f1bdc (first design - still in wip)
   margin-top: 20px;
 }
 #pre-footer form .femail-label {
   font-size: 1.2em;
+<<<<<<< HEAD
   font-family: "Vinson";
+=======
+>>>>>>> 20f1bdc (first design - still in wip)
   font-weight: 200;
 }
 #pre-footer form .femail-input {
@@ -438,6 +815,7 @@ header p {
 #pre-footer form .femail-form-msg {
   width: 20vw;
 }
+<<<<<<< HEAD
 
 #footer-infos {
   padding: 4rem;
@@ -446,12 +824,44 @@ header p {
   color: #fff;
   display: flex;
   justify-content: center;
+=======
+/* Photo contact */
+#contact-photo {
+  width: 500px;
+  height: 700px;
+  background-image: url(img/contact.jpeg);
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #04382b;
+}
+
+#contact-or {
+  display: block;
+  margin: 20px 0;
+  font-size: 2em
+}
+
+#footer-infos {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 #footer-infos .finfo {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
   margin: 0 30px;
+=======
+  margin: 15px 30px;
+  font-size: 1.3em;
+}
+#footer-bottom {
+  height: 8em;
+  width: 100%;
+  background-color: #000;
+>>>>>>> 20f1bdc (first design - still in wip)
 }
 
 /*# sourceMappingURL=styles.css.map */
