@@ -32,16 +32,12 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
-}
-
-#contentwrapper {
   font-family: "Vinson";
   color: #faebd7;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10vw;
 }
 
 /**********/
@@ -113,7 +109,7 @@ html {
 header {
   height: 60vh;
   width: 65vw;
-  margin-top: 20vh;
+  margin-top: 13vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,6 +349,13 @@ header h1 {
   animation-delay: 4s;
 }
 */
+/*****************/
+/* TO THE MAAAIN */
+/*****************/
+main {
+  width: 100%;
+}
+
 /**********************/
 /* MAIN PHOTO SECTION */
 /**********************/
@@ -510,7 +513,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6em 5vw 12em 5vw;
+  padding: 6em 10vw 12em 10vw;
   margin: 12em 0;
   /*	background-color: #04382b;*/
 }
@@ -523,21 +526,20 @@ header h1 {
   background-color: #000000d1;
 }
 #lateam article {
-  width: 13vw;
-  height: 13vw;
+  min-width: 13vw;
+  min-height: 13vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #000000d1;
-  padding: 5px;
+  padding: 1px;
   margin: 2vw;
   border-radius: 5px;
 }
 
 #lateam-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 
 .id-photo {
@@ -587,9 +589,10 @@ header h1 {
   text-align: center;
   font-size: 1em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-weight: 200;
-  padding: 1em;
+  padding: 5px;
 }
 
 /***********************/
@@ -708,6 +711,8 @@ header h1 {
   #whatwedo .whatwedo-article {
     width: 90vw;
     height: fit-content;
+    min-width: auto;
+    min-heigth: auto;
     opacity: 1;
     flex-direction: column;
   }
@@ -722,6 +727,14 @@ header h1 {
 #whatwedo .show-even-article,
 #whatwedo .hide-even-article {
     animation: none;
+  }
+
+  #lateam-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #lateam-wrapper .id-photo {
+    height: 165px;
   }
 
   #pre-footer {
